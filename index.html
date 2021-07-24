@@ -64,7 +64,7 @@
           <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-blue-400 text-blue-500 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="lg:text-white lg:hover:text-amber-400 text-amber-500 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://wa.me/998998677779"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-whatsapp text-lg leading-lg "
@@ -72,7 +72,7 @@
                 ><span class="lg:hidden inline-block ml-2">Whatsapp</span></a
               >
 							<a
-                class="lg:text-white lg:hover:text-blue-400 text-blue-500 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="lg:text-white lg:hover:text-amber-400 text-amber-500 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="mailto:nurli_obodqurilish@mail.ru"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fas fas fa-envelope text-lg leading-lg "
@@ -272,7 +272,7 @@
       <section id="advantages" class="relative py-20">
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mobile-padding">
               <img
                 alt="безопасность"
                 class="max-w-full rounded-lg shadow-lg"
@@ -687,6 +687,10 @@
     }
 
 		function toggleModal(modalID){
+		const navbar = 'example-collapse-navbar';
+		if (document.getElementById(navbar).classList.contains("block")) {
+			document.getElementById(navbar).classList.toggle("hidden");
+		}
     document.getElementById(modalID).classList.toggle("hidden");
     document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
     document.getElementById(modalID).classList.toggle("flex");
