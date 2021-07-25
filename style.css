@@ -90,6 +90,10 @@ html {
   line-height: 1;
 }
 
+.slider-bg {
+  background-position: center !important;
+}
+
 @media (max-width: 1024px) {
   .slider-bg {
     background-position: top;
@@ -106,6 +110,6 @@ html {
 
 @media (max-width: 540px) {
   .cards-container {
-    justify-content: center;
+    justify-content: center !important;
   }
 }
