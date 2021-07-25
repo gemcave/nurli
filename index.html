@@ -29,6 +29,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./assets/js/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="./assets/js//slick-theme.css"/>
     <title>Nurli-Obod-Qurilish | Строительное оборудование</title>
   </head>
   <body class="text-gray-800 antialiased">
@@ -103,15 +106,15 @@
         style="min-height: 90vh;"
       >
         <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("./assets/img/bg-hero.jpg");'
+          class="absolute top-0 w-full h-full bg-center bg-cover slider-bg"
+          style='background: url("./assets/img/bg-hero.jpg");'
         >
           <span
             id="blackOverlay"
             class="w-full h-full absolute opacity-50 bg-black"
           ></span>
         </div>
-        <div class="container relative mx-auto">
+        <div class="container relative mx-auto text-slider">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
@@ -121,6 +124,19 @@
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
                    для работы на высоте до 100 м(До 33 этажей) строительных организаций Республики Узбекистан
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="text-white font-semibold text-4xl">
+									Доставка груза<br>
+                  <span class="text-amber-500">из Китая в Узбекистан</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+									доставляем товары и оборудование из Китая быстро, качественно и недорого 
                 </p>
               </div>
             </div>
@@ -277,6 +293,7 @@
                 alt="безопасность"
                 class="max-w-full rounded-lg shadow-lg"
                 src="./assets/img/card-img2.jpg"
+								data-aos="fade-right"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -292,6 +309,7 @@
                   started faster. You can change the text and images and you're
                   good to go.
                 </p> -->
+									
                 <ul class="list-none mt-6">
                   <li class="py-2">
                     <div class="flex items-center">
@@ -340,19 +358,86 @@
       </section>
       <section id="offer" class="pt-20 pb-48">
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="flex flex-wrap justify-center text-center mb-12">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold">Что мы предлагаем</h2>
             </div>
           </div>
+					<div class="flex flex-wrap md:justify-between w-full cards-container">
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/1.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card pt-4">
+								<h4 class="text-lg">Международные автомобильные перевозки</h4>
+							</div>
+						</div> 
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/4.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card pt-4">
+								<h4 class="text-lg">Железнодорожные перевозки из Китая</h4>
+							</div>
+						</div> 
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/2.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card">
+								<h4 class="text-lg">Транспортная логистика</h4>
+							</div>
+						</div> 
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/3.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card">
+								<h4 class="text-lg">Складская логистика</h4>
+							</div>
+						</div> 
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/5.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card">
+								<h4 class="text-lg">Сертификация</h4>
+							</div>
+						</div> 
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/6.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card">
+								<h4 class="text-lg">Страхование</h4>
+							</div>
+						</div> 
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/7.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card">
+								<h4 class="text-lg">Таможенное оформление</h4>
+							</div>
+						</div> 
+						<div class="card py-4" data-aos="fade-down">
+							<div class="img">
+								<img src="./assets/img/icons/8.png" alt="Avatar" class="main-color">
+							</div>
+							<div class="container-card">
+								<h4 class="text-lg">Контейнерные грузоперевозки</h4>
+							</div>
+						</div> 
+					</div>
 						<div class="flex flex-wrap justify-center">
 							<div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
 								<div class="px-6">
 									<img
 										alt="..."
 										src="./assets/img/item1.jpg"
-										class="shadow-lg rounded-full max-w-full mx-auto"
+										class="shadow-lg rounded-full max-w-full mx-auto badge"
 										style="max-width: 120px;"
+										data-aos="fade-down"
 									/>
 									<div class="pt-6 text-center">
 										<h5 class="text-xl font-bold uppercase text-amber-500">Подъёмник</h5>
@@ -367,8 +452,9 @@
 									<img
 										alt="..."
 										src="./assets/img/item5.jpg"
-										class="shadow-lg rounded-full max-w-full mx-auto"
+										class="shadow-lg rounded-full max-w-full mx-auto badge"
 										style="max-width: 120px;"
+										data-aos="fade-down"
 									/>
 									<div class="pt-6 text-center">
 										<h5 class="text-xl font-bold uppercase text-amber-500">ZLP-630</h5>
@@ -468,9 +554,9 @@
         </div>
         <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 mb-4 md:mb-4">
           <div class="flex flex-wrap text-center justify-center">
-            <div class="w-full lg:w-6/12 px-4 mobile-padding">
+            <div class="w-full lg:w-6/12 px-4 mobile-padding" data-aos="fade-left">
               <h2 class="text-4xl font-semibold text-white">Приглашаем к сотрудничеству</h2>
-							<ul class="text-lg leading-relaxed mt-4 text-gray-500 list-disc">
+							<ul class="text-lg leading-relaxed mt-4 text-gray-500">
 								<li>
 									Форма оплаты безналичный и наличный расчет
 								</li>
@@ -488,6 +574,7 @@
             <div class="w-full lg:w-6/12 px-4">
               <div
                 class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-amber-500"
+								data-aos="fade-right"
               >
                 <div class="flex-auto p-5 lg:p-10">
                   <h4 class="text-2xl font-semibold">Хотите работать с нами?</h4>
@@ -622,7 +709,6 @@
                   </li>
                 </ul>
               </div>
-              
             </div>
           </div>
         </div>
@@ -632,7 +718,7 @@
         >
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-amber-600 font-semibold py-1">
-              2021 • ООО «Nurli-Obod-Qurilish»
+              Copyright © 2021 • ООО «Nurli-Obod-Qurilish»
             </div>
           </div>
         </div>
@@ -679,7 +765,16 @@
 			</div>
 		</div>
 		<div class="hidden opacity-75 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="./assets/js/slick.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
+	<script>
+		AOS.init({
+			delay: 200
+		});
+	</script>
   <script>
     function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");
@@ -697,4 +792,38 @@
     document.getElementById(modalID + "-backdrop").classList.toggle("flex");
   }
   </script>
+	<script type="text/javascript">
+	
+	async function load() {
+		var images = [];
+		function preload() {
+			for (var i = 0; i < arguments.length; i++) {
+					images[i] = new Image();
+					images[i].src = preload.arguments[i];
+			}
+		}
+		await preload("./assets/img/bg-hero2.jpg", "./assets/img/bg-hero.jpg",);
+	}
+
+$(document).ready(function(){
+	load();
+
+	$('.text-slider').slick({
+				slidesToShow: 1,
+				arrows: false,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 3000
+      });
+
+
+			$('.text-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+					if(currentSlide === 1) {
+						$('.slider-bg').css("background-image","url('./assets/img/bg-hero2.jpg')")
+					} else {
+						$('.slider-bg').css("background-image","url('./assets/img/bg-hero.jpg')")
+					}
+			});
+    });
+		</script>
 </html>
