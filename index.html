@@ -772,7 +772,11 @@
   </body>
 	<script>
 		AOS.init({
-			delay: 200
+			delay: 200,
+			disable: function() {
+				var maxWidth = 800;
+				return window.innerWidth < maxWidth;
+			}
 		});
 	</script>
   <script>
